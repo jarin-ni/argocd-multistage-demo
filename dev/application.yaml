@@ -1,0 +1,18 @@
+iapiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-app
+  namespace: argocd
+spec:
+  source:
+    repoURL: https://github.com/jarin-ni/argocd-multistage-demo
+    targetRevision: main
+    path: dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
