@@ -32,3 +32,16 @@ This repository demonstrates a **multi-stage deployment** using **Argo CD App-of
 3. Changes are automatically synchronized from Git
 4. Environments are fully isolated using Kubernetes namespaces
 
+kubectl apply -f app-of-apps.yaml
+Then open:
+
+Argo CD → Applications
+You will see:
+
+✅ dev-app
+
+✅ staging-app
+
+✅ prod-app
+
+Each auto-syncing 🎉
