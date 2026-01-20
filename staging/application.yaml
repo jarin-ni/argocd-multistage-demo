@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   source:
-    repoURL: https://github.com/YOUR_USERNAME/argocd-multistage-demo
+    repoURL: https://github.com/jarin-ni/argocd-multistage-demo
     targetRevision: main
     path: staging
   destination:
